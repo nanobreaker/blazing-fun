@@ -4,8 +4,8 @@
 mod pins;
 
 use ariel_os::{
-    debug::log::info,
     gpio::{Input, Pull},
+    log::info,
 };
 
 #[ariel_os::task(autostart, peripherals)]
