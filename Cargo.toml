@@ -10,6 +10,7 @@ ariel-os = { path = "build/imports/ariel-os/src/ariel-os", features = [
   "uart",
 ] }
 ariel-os-boards = { path = "build/imports/ariel-os/src/ariel-os-boards" }
+embedded-io-async = { version = "0.6.1", default-features = false }
 
 [lints.rust]
 unexpected_cfgs = { level = "warn", check-cfg = [
