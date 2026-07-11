@@ -95,6 +95,15 @@ impl SystemFetcher {
         self.networks.refresh(false);
         self.components.refresh(false);
 
+        for component in self.components.into_iter() {
+            tracing::info!(
+                "component id {} label {} temp {}",
+                component.id().unwrap_or("none"),
+                component.label(),
+                component.temperature().unwrap_or(0.0)
+            );
+        }
+
         let cpu_usage = self.system.global_cpu_usage();
         let cpu_tmp = self
             .components
