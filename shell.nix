@@ -24,6 +24,8 @@ pkgs.mkShell {
     rustToolchain
     laze
     probe-rs-tools
+    elf2uf2-rs
+    picotool
     espup
     espflash
     nushell

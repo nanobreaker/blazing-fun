@@ -61,7 +61,7 @@ where
             fan_ctrl,
             fan_supply,
             status_indicator,
-            operating_mode: OperatingMode::Auto,
+            operating_mode: OperatingMode::Full,
             telemetries,
         }
     }
